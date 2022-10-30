@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply cursor-pointer font-semibold text-sm text-white hover:underline;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Whitney Light";
+  src: url("./assets/fonts/whitneylight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Whitney Medium";
+  src: url("./assets/fonts/whitneymedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Whitney Bold";
+  src: url("./assets/fonts/whitneybold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sprechen";
+  src: url("./assets/fonts/sprechen.woff") format("woff");
+}
+
+* {
+  font-family: "Whitney Medium";
 }
