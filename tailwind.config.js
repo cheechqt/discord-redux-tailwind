@@ -12,6 +12,13 @@ module.exports = {
           "Arial",
         ],
         default: ["Whitney", "Helvetica Neue", "Helvetica", "Arial"],
+        default_bold: [
+          "Whitney Bold",
+          "Whitney",
+          "Helvetica Neue",
+          "Helvetica",
+          "Arial",
+        ],
       },
       colors: {
         blue: "#295DE7",
@@ -19,7 +26,6 @@ module.exports = {
         purple: "#5865f2",
         green: "#3ba55c",
       },
-      
     },
   },
   plugins: [],

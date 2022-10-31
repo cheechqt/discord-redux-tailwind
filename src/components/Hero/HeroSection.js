@@ -1,19 +1,37 @@
-import image from "./images/section-1.svg";
-function HeroSection({ title, text }) {
+function HeroSection({ image, title, text, index, isLastSection }) {
   return (
-    <div className="w-full flex items-center flex-col">
-      <div className="opacity-100 translate-y-0 py-14 transition-opacity duration-500 delay-100 w-full max-width-[1260px] box-border grid grid-cols-12 gap-x-5 px-10">
-        <img
-          className="grid col-span-4 w-full object-cover mt-6 max-w-[678px] max-h-[440px] md:col-span-4 md:my-auto lg:col-span-7 order-1"
-          src={image}
-          alt=""
-        />
-      </div>
-      <div className="text-[#23272a] grid col-span-4 md:flex md:flex-col md:justify-center mt-6 md:mt-0 md:col-span-4 lg:col-start-9 order-2">
-        <h2 className="font-bold  font-title text-2xl leading-tight md:text-5xl">
-          {title}
-        </h2>
-        <div className="mt-6 text-base leading-relaxed">{text}</div>
+    <div
+      className={`flex items-center justify-center 
+      ${index % 2 === 0 ? "bg-white" : "bg-[#f6f6f6]"}
+      `}
+    >
+      <div
+        className={`w-full max-w-[1260px] flex items-center justify-center flex-col md:flex-row px-6 py-14 ${
+          isLastSection && "md:flex-col text-center"
+        }`}
+      >
+        <div
+          className={`opacity-100 translate-y-0 transition-opacity duration-500 delay-100 w-full box-border basis-auto 
+          ${index % 2 === 0 ? "order-0" : "order-1"}
+          ${isLastSection && "flex items-center justify-center"}
+          `}
+        >
+          <img
+            className="w-full object-cover mt-6 max-w-[678px] max-h-[440px] md:my-auto"
+            src={image}
+            alt=""
+          />
+        </div>
+        <div className="text-[#23272a] flex flex-col flex-shrink basis-3/4 justify-center mt-5 md:mt-0">
+          <h2
+            className={`font-bold text-[32px] leading-tight md:text-5xl ${
+              isLastSection ? "font-title" : "font-default_bold"
+            }`}
+          >
+            {title}
+          </h2>
+          <div className="mt-6 text-[20px] leading-relaxed">{text}</div>
+        </div>
       </div>
     </div>
   );
