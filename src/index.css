@@ -10,22 +10,22 @@
 
 @font-face {
   font-family: "Whitney Light";
-  src: url("./assets/fonts/whitneylight.woff") format("woff");
+  src: url("./fonts/whitneylight.woff") format("woff");
 }
 
 @font-face {
   font-family: "Whitney Medium";
-  src: url("./assets/fonts/whitneymedium.woff") format("woff");
+  src: url("./fonts/whitneymedium.woff") format("woff");
 }
 
 @font-face {
   font-family: "Whitney Bold";
-  src: url("./assets/fonts/whitneybold.woff") format("woff");
+  src: url("./fonts/whitneybold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Sprechen";
-  src: url("./assets/fonts/sprechen.woff") format("woff");
+  src: url("./fonts/sprechen.woff") format("woff");
 }
 
 * {

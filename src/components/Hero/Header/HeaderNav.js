@@ -1,16 +1,13 @@
 /* eslint-disable */
 import { Bars3Icon } from "@heroicons/react/24/solid";
 import BaseButton from "base/Button";
+import logo from "./images/logo.svg"
 
 function HeaderNav() {
   return (
     <div className="w-full max-w-[1180px] flex items-center justify-between py-4 px-6 md:px-10">
       <a href="#">
-        <img
-          src="https://rb.gy/it5msp"
-          alt="logo"
-          className="w-32 h-12 object-contain"
-        />
+        <img src={logo} alt="logo" className="w-32 h-12 object-contain" />
       </a>
       <div className="hidden lg:flex space-x-6">
         <a className="link">Download</a>

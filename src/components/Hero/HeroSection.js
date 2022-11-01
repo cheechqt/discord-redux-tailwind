@@ -6,7 +6,7 @@ function HeroSection({ image, title, text, index, isLastSection }) {
       `}
     >
       <div
-        className={`w-full max-w-[1260px] flex items-center justify-center flex-col md:flex-row px-6 py-14 ${
+        className={`w-full max-w-[1260px] flex items-center justify-center flex-col md:flex-row px-10 py-14 ${
           isLastSection && "md:flex-col text-center"
         }`}
       >

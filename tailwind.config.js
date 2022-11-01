@@ -26,6 +26,11 @@ module.exports = {
         purple: "#5865f2",
         green: "#3ba55c",
       },
+      gridTemplateColumns: {
+        12: "repeat(12,1fr)",
+        8: "repeat(8,1fr)",
+        4: "repeat(4,1fr)",
+      },
     },
   },
   plugins: [],
