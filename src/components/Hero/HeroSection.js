@@ -12,8 +12,8 @@ function HeroSection({ image, title, text, index, isLastSection }) {
       >
         <div
           className={`opacity-100 translate-y-0 transition-opacity duration-500 delay-100 w-full box-border basis-auto 
-          ${index % 2 === 0 ? "order-0" : "order-1"}
-          ${isLastSection && "flex items-center justify-center"}
+          ${index % 2 === 0 ? "md:order-0" : "md:order-1"}
+          ${isLastSection && "flex items-center justify-center order-1 md:order-0"}
           `}
         >
           <img

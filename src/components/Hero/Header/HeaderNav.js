@@ -1,5 +1,6 @@
 /* eslint-disable */
 import { Bars3Icon } from "@heroicons/react/24/solid";
+import BaseButton from "base/Button";
 
 function HeaderNav() {
   return (
@@ -18,11 +19,11 @@ function HeaderNav() {
         <a className="link">Safety</a>
         <a className="link">Support</a>
       </div>
-      <div className="flex space-x-4">
-        <button className="bg-white p-2 rounded-full text-xs md:text-sm px-4 focus:outline-none hover:shadow-2xl hover:text-blurple transition duration-200 ease-in-out whitespace-nowrap font-medium">
+      <div className="flex space-x-4 items-center">
+        <BaseButton classes="bg-white !w-auto !text-sm !px-5 !py-2 text-black hover:text-blurple">
           Login
-        </button>
-        <Bars3Icon className="h-9 text-white cursor-pointer lg:hidden" />
+        </BaseButton>
+        <Bars3Icon className="h-11 text-white cursor-pointer lg:hidden" />
       </div>
     </div>
   );
