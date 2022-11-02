@@ -38,7 +38,7 @@ function TitleSection() {
           </li>
           <li className="cursor-pointer">
             <a>
-              <img className="w-7" src={ytLogo} />
+              <img className="w-8" src={ytLogo} />
             </a>
           </li>
         </ul>
