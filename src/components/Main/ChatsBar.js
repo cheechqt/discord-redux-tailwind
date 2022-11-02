@@ -3,7 +3,7 @@ import { setDoc, doc } from "firebase/firestore";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { collection } from "firebase/firestore";
 import { db } from "firebase.js";
-import Channel from "./Channel";
+import Channel from "./ChatChannel";
 
 function ChatsBar() {
   const [channels] = useCollection(collection(db, "channels"));

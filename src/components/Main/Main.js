@@ -12,7 +12,7 @@ function Main() {
   return (
     <>
       {!user && redirect("/")}
-      <div className="flex h-screen">
+      <div className="flex h-screen bg-black">
         <Sidebar />
         <ChatsBar />
       </div>
