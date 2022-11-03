@@ -3,9 +3,10 @@ import { setDoc, doc } from "firebase/firestore";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { collection } from "firebase/firestore";
 import { db } from "firebase.js";
-import Channel from "./ChatChannel";
+import Channel from "./Channel";
+import UserRow from "./UserRow";
 
-function ChatsBar() {
+function ChannelsSection() {
   const [channels] = useCollection(collection(db, "channels"));
 
   const handleAddChannel = () => {
@@ -42,8 +43,9 @@ function ChatsBar() {
           ))}
         </div>
       </div>
+      <UserRow />
     </div>
   );
 }
 
-export default ChatsBar;
+export default ChannelsSection;

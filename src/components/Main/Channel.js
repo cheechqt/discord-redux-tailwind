@@ -24,6 +24,7 @@ function Channel({ id, channelName }) {
       <HashtagIcon className="h-5 mr-2" /> {channelName}
     </div>
   );
+
 }
 
 export default Channel;
