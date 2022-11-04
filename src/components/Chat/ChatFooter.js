@@ -4,21 +4,20 @@ import {
   PlusCircleIcon,
 } from "@heroicons/react/24/solid";
 import { db } from "firebase.js";
-import { doc, serverTimestamp, updateDoc } from "firebase/firestore";
+import { addDoc, collection, doc } from "firebase/firestore";
 
 function Footer({ channelName, channelId, inputRef, handleOnClick, user }) {
   const sendMessage = (e) => {
     e.preventDefault();
-
+    
     if (inputRef.current.value !== "") {
-      updateDoc(doc(db, "channels", channelName), {
-        messages: {
-          timestamp: serverTimestamp(),
-          message: inputRef.current.value,
-          name: user?.displayName,
-          photoURL: user?.photoURL,
-          email: user?.email,
-        },
+      const colRef = collection(doc(db, "channels", channelName), "messages");
+      addDoc(colRef, {
+        timestamp: new Date(),
+        message: inputRef.current.value,
+        name: user?.displayName,
+        photoURL: user?.photoURL,
+        email: user?.email,
       });
     }
 

@@ -22,17 +22,17 @@ function Chat() {
   };
 
   return (
-    <>
+    <div className="flex flex-col h-screen">
       <Header channelName={channelName} />
-      <Main />
+      <Main chatRef={chatRef} inputRef={inputRef} channelName={channelName} />
       <Footer
         channelId={channelId}
         channelName={channelName}
         inputRef={inputRef}
         user={user}
-        // handleOnClick={scrollToBottom}
+        handleOnClick={scrollToBottom}
       />
-    </>
+    </div>
   );
 }
 

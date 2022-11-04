@@ -12,7 +12,8 @@ function ChannelsSection() {
   const handleAddChannel = () => {
     const channelName = prompt("Enter a new channel name");
     if (channelName) {
-      setDoc(doc(db, "channels", channelName), {
+      const docRef = doc(db, "channels", channelName);
+      setDoc(docRef, {
         channelName,
       });
       console.log("Channel added with name:", channelName);

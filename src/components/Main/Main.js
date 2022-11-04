@@ -4,7 +4,7 @@ import { auth } from "firebase.js";
 
 import Sidebar from "./Sidebar";
 import ChannelsSection from "./ChannelsSection";
-import Chat from "./Chat/Chat";
+import Chat from "../Chat/Chat";
 
 function Main() {
   const [user] = useAuthState(auth);
