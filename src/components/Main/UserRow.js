@@ -10,7 +10,8 @@ function UserRow() {
     <div className="flex justify-between items-center space-x-8 bg-[#292b2f] p-2">
       <div className="flex items-center space-x-1">
         <img
-          src={user?.photoURL ? user?.photoURL : "shorturl.at/acwxD"}
+          referrerPolicy="no-referrer"
+          src={user?.photoURL}
           alt="user"
           className="h-10 rounded-full"
           onClick={() => {
