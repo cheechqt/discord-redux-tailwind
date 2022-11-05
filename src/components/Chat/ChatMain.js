@@ -1,15 +1,16 @@
 import { db } from "firebase.js";
 import { collection, doc } from "firebase/firestore";
+import { forwardRef } from "react";
 import { useCollection } from "react-firebase-hooks/firestore";
 import Message from "./Message";
 
-function ChatMain({ chatRef, inputRef, channelName }) {
+function ChatMain({ inputRef, channelName }, ref) {
   const [messages] = useCollection(
     channelName && collection(doc(db, "channels", channelName), "messages")
   );
 
   return (
-    <main className="flex-grow overflow-y-scroll scrollbar-hide">
+    <main className="flex-grow overflow-y-scroll scrollbar-hide" ref={ref}>
       {messages?.docs
         .sort(
           (a, b) =>
@@ -17,8 +18,6 @@ function ChatMain({ chatRef, inputRef, channelName }) {
             b.data().timestamp.toDate().getTime()
         )
         .map((doc) => {
-          console.log(doc.data().timestamp.toDate().getTime());
-
           const { message, timestamp, name, photoURL, email } = doc.data();
 
           return (
@@ -35,9 +34,9 @@ function ChatMain({ chatRef, inputRef, channelName }) {
             />
           );
         })}
-      <div ref={chatRef} className="pb-16" />
+      <div className="pb-16"></div>
     </main>
   );
 }
 
-export default ChatMain;
+export default forwardRef(ChatMain);

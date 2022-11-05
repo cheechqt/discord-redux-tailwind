@@ -14,23 +14,16 @@ function Chat() {
   const chatRef = useRef(null);
   const [user] = useAuthState(auth);
 
-  const scrollToBottom = () => {
-    chatRef.current.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
-
   return (
     <div className="flex flex-col h-screen">
       <Header channelName={channelName} />
-      <Main chatRef={chatRef} inputRef={inputRef} channelName={channelName} />
+      <Main ref={chatRef} inputRef={inputRef} channelName={channelName} />
       <Footer
         channelId={channelId}
         channelName={channelName}
-        inputRef={inputRef}
+        ref={inputRef}
+        chatRef={chatRef}
         user={user}
-        handleOnClick={scrollToBottom}
       />
     </div>
   );
