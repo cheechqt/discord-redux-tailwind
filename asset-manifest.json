@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1e155167.css",
+    "main.js": "/static/js/main.3cd980a7.js",
+    "static/media/section-2.svg": "/static/media/section-2.e2236b93f8ca27e6307bfbcf11b4e749.svg",
+    "static/media/section-1.svg": "/static/media/section-1.2b633b79ba966ad23a683742dfa60cf7.svg",
+    "static/media/section-3.svg": "/static/media/section-3.58ff7a2be4dde6382f19cf3279d2faef.svg",
+    "static/media/section-4.svg": "/static/media/section-4.b8b2baa7deaa4d684823cc70302f9f85.svg",
+    "static/media/leftImg.svg": "/static/media/leftImg.172c21ac03280d1e5bab0f5a07c06b6d.svg",
+    "static/media/rightImg.svg": "/static/media/rightImg.967a78834100f30a58096466102e7f4f.svg",
+    "static/media/whitneybold.woff": "/static/media/whitneybold.6ee3201c9bdc4fbdd732.woff",
+    "static/media/whitneylight.woff": "/static/media/whitneylight.776741814f40689153e6.woff",
+    "static/media/whitneymedium.woff": "/static/media/whitneymedium.7c71bd98042cd0eee825.woff",
+    "static/media/logo.png": "/static/media/logo.4041765198e5a745d76c.png",
+    "static/media/cloudsImg.svg": "/static/media/cloudsImg.8ae602b8875b1b96f6b8552480925006.svg",
+    "static/media/sprechen.woff": "/static/media/sprechen.50be09de7c57db735ad5.woff",
+    "static/media/logo.svg": "/static/media/logo.19bc2ce6f2904254334fdbe6a0798dbb.svg",
+    "static/media/twitter.svg": "/static/media/twitter.7e63a383ae832cee1b63aec2a4f2e583.svg",
+    "static/media/instagram.svg": "/static/media/instagram.f5ae2b5561cafe1a1dafa22fce2791e0.svg",
+    "static/media/youtube.svg": "/static/media/youtube.1cb793c964fca24f476c306783b9a72a.svg",
+    "index.html": "/index.html",
+    "static/media/facebook.svg": "/static/media/facebook.7557cb9d97abc17eed336b1a2b01e79f.svg",
+    "main.1e155167.css.map": "/static/css/main.1e155167.css.map",
+    "main.3cd980a7.js.map": "/static/js/main.3cd980a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e155167.css",
+    "static/js/main.3cd980a7.js"
+  ]
+}
