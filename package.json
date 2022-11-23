@@ -2,6 +2,7 @@
   "name": "discord-redux-tailwind",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cheechqt.github.io/discord-redux-tailwind",
   "dependencies": {
     "@heroicons/react": "^2.0.12",
     "@reduxjs/toolkit": "^1.8.6",
